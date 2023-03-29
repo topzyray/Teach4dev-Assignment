@@ -1,0 +1,372 @@
+/* root elements */
+html {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-bx;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* body elements */
+
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+}
+  
+/* header section */
+
+header {
+    width: 100%;
+    height: 80px;
+    padding-top: 1%;
+    padding-bottom: 0;
+}
+
+nav {
+    display: flex;
+    margin: 0 15px;
+    font-family: 'Avenir Next Medium', sans-serif;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+nav .menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu a {
+    padding: 15px;
+    display: inline-block;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav .menu .home {
+    border-bottom-color: 3px solid #FF576B;
+}
+
+.menu-h a:hover {
+    border-bottom: 3px solid #FF576B;
+}
+
+.donate {
+    background-color: #FF576B;
+    border-radius: 5px;
+}
+
+nav .contact-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.contact-list a {
+    padding: 5px;
+    display: inline-block;
+}
+
+
+/* first section */
+
+.dfac {
+    display: flex;
+    background-color: #083A55;
+    height: 50px;
+    color: #ffffff;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+/* div 1 second section */
+
+.core-values {
+    height: calc(100vh - 76px);
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    background: url(/images/bg-index-2a.png);
+    background-size: 130%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.core-values h1, .core-values h3 {
+    width: 70%;
+    text-align: center;
+}
+
+.vision-mission-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 5px;
+    padding-right: 250px;
+    width: 80%;
+}
+
+.vision-mission-container img {
+    grid-column: 1 / 2;
+    grid-row: auto;
+}
+
+.vision {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    padding-left: 0;
+    padding-top: 100px;
+}
+
+.mission {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    padding-left: 0;
+    padding-top: 80px;
+}
+
+.vision-mission {
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-left: 100px;
+}
+
+.vision-mission h3 {
+    color: #083A55;
+    padding-bottom: 20px;
+}
+
+/* achievements */
+
+.achievements {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.achievements .header {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 60px;
+    color: #083A55;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.stats {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 25px;    
+}
+
+.stats img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.stat-1 img {
+    background-color: purple;
+} 
+
+.stat-2 img {
+    background-color: #1b1b32;
+} 
+
+.stat-3 img {
+    background-color: orange;
+} 
+
+.stat-4 img {
+    background-color: green;
+}
+
+.stat-5 img {
+    background-color: blue;
+}
+
+.stat-1, .stat-2, .stat-3, .stat-4, .stat-5 {
+    width: 300px;
+}
+
+.stat-header {
+    font-weight: bold;
+}
+
+.index-5 {
+    background: url(/images/bg-index-5.png);
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 100px;
+}
+
+.index-5 p {
+    color: white;
+    font-size: 800;
+    text-align: center;
+    padding-top: 8%;
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 30px;
+}
+
+
+/* our programs */
+
+.our-programs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+.our-programs h1 {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    text-align: center;
+    /* padding-top: 80px; */
+    padding-bottom: 40px;
+    font-size: 60px;
+}
+
+.techsters {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.emmi {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.nort {
+    grid-column: 3 / 4;
+    grid-row: 2;
+}
+
+.our-programs img {
+    width: 405px;
+    height: 250px;
+}
+
+
+/* videos */
+
+.video-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 100px;
+}
+
+.video-1 {
+    grid-column: 1 / 2;
+    grid-row: span 2;
+}
+
+/* footer section */
+
+footer {
+    background-color: #083A55;
+    color: white;
+    height: auto;
+    padding: 80px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.first-footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.first-footer a {
+    color: white;
+}
+
+.other-footer {
+    display: flex;
+    margin: 0 auto;
+    font-family: 'Avenir Next Medium',sans-serif,sans-serif;
+    font-size: 14px;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+}
+
+footer .header {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+footer li {
+    width: 70%;
+    font-size: 12px;
+    font-family: 'Avenir Next Regular', sans-serif;
+    margin-bottom: 20px;
+}
+
+.other-footer .contact-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.other-footer .download-brochure {
+    width: 185px;
+    height: 40px;
+    background-color: #FF576B;
+    color: white;
+    border: none;
+    font-family: 'Avenir Next Medium', sans-serif;
+    border-radius: 5px 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.address ul, .links ul, .blog ul {
+    padding: 0;
+}
